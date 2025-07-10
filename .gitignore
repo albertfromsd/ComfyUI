@@ -1,26 +1,46 @@
+# === ENVIRONMENTS ===
+venv/
+.venv/
+venv-comfy/
+
+# === PYTHON CACHE ===
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# === IDE CONFIGS ===
+.vscode/
+.idea/
+.vs/
+.DS_Store
+
+# === OUTPUT / MODELS ===
 /output/
 /input/
 !/input/example.png
 /models/
+checkpoints/
+*.safetensors
+*.log
+
+# === TEMP & CUSTOM ===
 /temp/
-/custom_nodes/
-!custom_nodes/example_node.py.example
-extra_model_paths.yaml
-/.vs
-.vscode/
-.idea/
-venv/
-.venv/
+/user/
 /web/extensions/*
 !/web/extensions/logging.js.example
 !/web/extensions/core/
-/tests-ui/data/object_info.json
-/user/
-*.log
 web_custom_versions/
-.DS_Store
+extra_model_paths.yaml
+
+# === TEST / DOC FILES ===
+/tests-ui/data/object_info.json
 openapi.yaml
 filtered-openapi.yaml
 uv.lock
+.env
+
+# === CUSTOM NODES ===
+/custom_nodes/
+!custom_nodes/example_node.py.example
